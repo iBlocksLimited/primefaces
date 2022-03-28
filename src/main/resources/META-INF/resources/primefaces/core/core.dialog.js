@@ -32,7 +32,7 @@ if (!PrimeFaces.dialog) {
             }
 
             dialogDOM.append('<div class="ui-dialog-content ui-widget-content ui-df-content" style="height: auto;">' +
-                    '<iframe style="border:0 none" frameborder="0"/>' +
+                    '<iframe sandbox="allow-forms allow-scripts" style="border:0 none" frameborder="0" />' +
                     '</div>');
 
             dialogDOM.appendTo(rootWindow.document.body);

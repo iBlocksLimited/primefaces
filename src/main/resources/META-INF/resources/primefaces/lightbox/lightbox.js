@@ -198,7 +198,7 @@ PrimeFaces.widget.LightBox = PrimeFaces.widget.BaseWidget.extend({
         this.cfg.width = this.cfg.width||'640px';
         this.cfg.height = this.cfg.height||'480px';
 
-        this.iframe = $('<iframe frameborder="0" style="width:' + this.cfg.width + ';height:'
+        this.iframe = $('<iframe sandbox="allow-forms allow-scripts" frameborder="0" style="width:' + this.cfg.width + ';height:'
                         + this.cfg.height + ';border:0 none; display: block;"></iframe>').appendTo(this.content);
 
         if(this.cfg.iframeTitle) {
